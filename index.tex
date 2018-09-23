@@ -1,0 +1,95 @@
+% DISCLAIMER: THIS LaTeX TEMPLATE IS NOT ENDORSED BY HULT INTERNATIONAL BUSINESS SCHOOL. THE PURPOSE OF THIS TEMPLATE IS TO HAVE A DOCUMENT FORMATTED TO APA, FOR USING IN PERSONAL ASSIGNMENTS AND REPORTS. THE USE OF THIS DOCUMENT AND ITS LIABILITIES IS YOUR TOTAL RESPONSIBILITY.
+
+\documentclass[man,donotrepeattitle,final]{apa6}
+\usepackage[american]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[backend=biber,bibstyle=apa, citestyle=apa]{biblatex}
+\usepackage{csquotes}
+\usepackage{graphicx}
+
+%removes abstract from report.  Comment the line below if you want an abstract
+\renewcommand{\abstract}[1]{}
+
+
+\DeclareLanguageMapping{american}{american-apa}
+% for automated reference generation in bibtex format, I strongly recommend Mendeley Desktop
+\addbibresource{references.bib}
+
+\vspace*{-3cm}
+
+\title{\hspace*{-0.3in}\centerline{\includegraphics[width=10cm]{hult-logo.jpg}} Team Case Analysis Report: “FOO BAR”}
+\shorttitle{Case Analysis: FOO BAR}
+\author{John Doe\\Jane Doe\\Jimmy Doe\\James Doe\\Foo Bar}
+
+\affiliation{\hspace*{2cm}}
+\abstract{No abstract in this text...}
+
+\begin{document}
+\maketitle
+
+Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+
+\section{1 - Industry Characteristics}
+
+Bring to the table win-win survival strategies to ensure proactive domination \parencite{McLaren2016}.  At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring \parencite{Lao2015}.  
+
+Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line. \parencite{Hardman2015}. 
+
+\section{2 - Challenges and trade-offs in FOO BAR Strategy}
+
+Phosfluorescently engage worldwide methodologies with web-enabled technology. Interactively coordinate proactive e-commerce via process-centric "outside the box" thinking (Figure 1). Completely pursue scalable customer service through sustainable potentialities. \parencite{Porter2008}.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=14cm]{hult-logo.jpg}
+    \caption{This is the logo of Hult International Business School}
+    \label{fig:my_label}
+\end{figure}
+
+% Table formatting: for easier table making in LaTeX, go to http://www.tablesgenerator.com/
+\begin{table}[]
+\caption{Caption}
+\label{my_label}
+\begin{tabular}{lllll}\midrule
+test & a  & b  & c  & d  \\ \midrule
+aaa  & 1  & 13 & 33 & 21 \\
+bbb  & 23 & 11 & 31 & 3  \\
+ccc  & 31 & 22 & 32 & 2 \\ \midrule
+\end{tabular}
+\begin{tablenotes}[para,flushleft]
+{\small
+\textit{Note.} All data are approximate.
+}
+\end{tablenotes}
+\end{table}
+
+\begin{table}[htbp]
+\vspace*{2em}
+\begin{threeparttable}
+\caption{A Complex Table}
+\label{tab:ComplexTable}
+\begin{tabular}{@{}lrrr@{}} \toprule
+Distribution type & \multicolumn{2}{l}{Percentage of} & Total number \\
+& \multicolumn{2}{l}{targets with} & of trials per \\
+& \multicolumn{2}{l}{segment in} & participant \\ \cmidrule(r){2-3}
+& Onset & Coda & \\ \midrule
+Categorical -- onset\tabfnm{a} & 100 & 0 & 196 \\
+Probabilistic & 80 & 20\tabfnm{*} & 200 \\
+Categorical -- coda\tabfnm{b} & 0 & 100\tabfnm{*} & 196 \\ \midrule
+\end{tabular}
+\begin{tablenotes}[para,flushleft]
+{\small
+\textit{Note.} All data are approximate.
+\tabfnt{a}Categorical may be onset.
+\tabfnt{b}Categorical may also be coda.
+\tabfnt{*}\textit{p} < .05.
+\tabfnt{**}\textit{p} < .01.
+}
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
+
+\printbibliography[]
+
+\end{document}
